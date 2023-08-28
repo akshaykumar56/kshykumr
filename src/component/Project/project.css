@@ -1,0 +1,26 @@
+.project{
+    animation-name:identifier;
+   animation-duration: 8s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+}
+
+.Web{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button1{
+  width:100%;
+}
+.titlename{
+  font-weight: bold;
+}
+@keyframes identifier {
+  0%    { color: red; }
+  25%   { color: Maroon  }
+  50%   { color: rgb(70, 70, 238); }
+  75%  { color: purple }
+  100%  { color: red; }
+  }

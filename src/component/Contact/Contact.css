@@ -1,0 +1,142 @@
+.form{
+  background: linear-gradient(45deg,black 10%, transparent), url("./Ak3.jpg") no-repeat;
+  background-size: cover;
+}
+
+
+input{
+  height:40px;
+  width:600px;
+  margin:10px 0px;
+  border-radius:10px;
+}
+textarea{
+  height:150px;
+  width:600px;
+  margin:10px 0px;
+  border-radius:10px;
+}
+.form{
+  width:84vw;
+  height:auto;
+  margin:20px;
+  padding:30px 40px;
+}
+
+.contact
+{
+    display:flex;
+    /* flex-direction:row; */
+    justify-content:center;
+    align-items:center;
+    animation-name:identifier1;
+      animation-duration:2s;
+        animation-timing-function:linear;
+        animation-iteration-count: 1;
+
+}
+
+@keyframes identifier1 
+{
+0%    {opacity:0  }
+25%   { opacity: 0.25; }
+50%   { opacity: 0.5; }
+75%   { opacity: 0.75; }
+100%  { opacity:1; }
+}
+
+.Line
+{
+  font-size: 50px;
+  animation-name:identifier2;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes identifier2
+      {
+        0%    { color: red; }
+    25%   { color: Maroon  }
+    50%   { color: rgb(70, 70, 238); }
+    75%  { color: purple }
+    100%  { color: red; }
+      }
+
+.card-links:hover{
+    background-color:#3ded97;
+    box-shadow: inset 450px 0 0 0 grey;
+ }
+
+ .card-links{
+    box-shadow: inset 0 0 0 0 grey;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+ }
+
+@media only screen and (max-width:900px){
+.contact
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+.text{
+    width:100%;
+}
+.form{
+  width:95vw;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Line
+{
+  font-size: 40px;
+}
+
+
+input{
+  height:40px;
+  width:400px;
+  margin:10px 0px;
+  border-radius:10px;
+}
+textarea{
+  height:150px;
+  width:400px;
+  margin:10px 0px;
+  border-radius:10px;
+}
+.form{
+  width:80vw;
+  height:auto;
+  margin:20px 0px;
+  padding:30px 0px;
+}
+}
+
+
+@media only screen and (max-width:650px){
+  
+  
+  input{
+    height:40px;
+    width:250px;
+    margin:10px 0px;
+    border-radius:10px;
+  }
+  textarea{
+    height:150px;
+    width:250px;
+    margin:10px 0px;
+    border-radius:10px;
+  }
+  .form{
+    width:94vw;
+    height:auto;
+    margin:20px 0px;
+    padding:30px 0px;
+  }
+  }

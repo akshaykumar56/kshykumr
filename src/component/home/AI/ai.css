@@ -1,0 +1,76 @@
+.img{
+    width:50%;
+    height:300px;
+    -webkit-box-shadow: 0 0 20px 8px grey;
+    -moz-box-shadow: 0 0 20px 8px grey;
+    box-shadow: 0 0 20px 8px grey;
+}
+
+.card1{
+    min-height:190px;
+    display: flex;
+
+}
+.heading{
+    animation-name:identifier4;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .concepts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin:50px 0px;
+    padding:20px 5px;
+    /* border-top: 2px solid grey; */
+}
+
+.concept{
+    -webkit-box-shadow: 0 0 5px 5px grey;
+    -moz-box-shadow: 0 0 5px 5px grey;
+    box-shadow: 0 0 5px 5px grey;
+    padding: 10px;
+}
+.textAlign{
+    text-align: center;
+}
+  
+
+
+  @keyframes identifier4 {
+    0%    { color: red; }
+    25%   { color: Maroon  }
+    50%   { color: rgb(70, 70, 238); }
+    75%  { color: purple }
+    100%  { color: red; }
+  }
+h1{
+    font-size:40px;
+}
+
+h4{
+ font-size:30px;
+ text-align: center;
+}
+
+
+@media only screen and (max-width:770px){
+    .img{
+        height:'auto';
+        width:100%;
+    }
+    h1{
+        font-size:30px;
+    }
+    
+    h4{
+        font-size:25px;
+    
+       }
+}
