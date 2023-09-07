@@ -4,7 +4,8 @@ import {memo} from 'react'
 import {useState} from 'react';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './component/Navbar';
-
+import Alert from './component/Alert';
+import Hamberger from './component/Hamberger'
 import Project from './component/Project/Project';
 import Contact from './component/Contact/Contact';
 import Home from './component/Home1/Home';
@@ -25,7 +26,18 @@ import SQL from './component/home/SQL/SQL';
 import Akshay from './component/Akshay';
 
 function App() {
+  const [alert, setAlert] = useState(null);
+  const showAlert = (message, type)=>{
+    setAlert({
+      msg: message,
+      type: type
+    })
+    setTimeout(() => {
+    setAlert(null);
+    }, 2000);
+}
 
+ console.log(alert) 
 
   const [T,setT]=useState(1);
   
@@ -35,10 +47,12 @@ function App() {
   if(T===1){
     myElement.style.display = 'none';
     setT(0)
+    
   }
   else{
     myElement.style.display = 'block';
     setT(1)
+   
   }
   }
 
@@ -58,7 +72,7 @@ function App() {
 
     var e=localStorage.getItem('mode')
       if(e==='white'){
-        document.body.style.backgroundColor='#f5f5f4'
+        document.body.style.backgroundColor='white'
         document.body.style.color='black'
       }
       else
@@ -69,13 +83,15 @@ function App() {
       }
   return (
   <>
-   <Navbar  hiddden={hidden} toggleMode={toggleMode}/>
    <BrowserRouter>
+   <Navbar  hiddden={hidden} toggleMode={toggleMode}/>
+   <Hamberger/>
+   <Alert alert={alert}/>
     <Routes>
     <Route exact path="/" element={<Home/>}/>
     <Route exact path="/home" element={<Home/>}/>
     <Route exact path="/project" element={<Project/>}/>
-    <Route exact path="/contact" element={<Contact/>}/>
+    <Route exact path="/contact" element={<Contact showAlert={showAlert}/>}/>
     <Route exact path="/akshay" element={<Akshay/>}/>
 
 

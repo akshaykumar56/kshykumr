@@ -23,6 +23,7 @@ textarea{
   padding:30px 40px;
 }
 
+
 .contact
 {
     display:flex;
@@ -123,13 +124,13 @@ textarea{
   
   input{
     height:40px;
-    width:250px;
+    width:300px;
     margin:10px 0px;
     border-radius:10px;
   }
   textarea{
     height:150px;
-    width:250px;
+    width:300px;
     margin:10px 0px;
     border-radius:10px;
   }

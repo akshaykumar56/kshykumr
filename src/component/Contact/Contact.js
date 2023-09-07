@@ -8,29 +8,27 @@ import './Contact.css'
 import { useState } from 'react';
 
 
-const Contact = () => {
+const Contact = (props) => {
   const mode=localStorage.getItem('mode');
-
 
 
   const[note,setNote] = useState({name:"",email:"",message:""})
   const onChange=(e)=>{
       setNote({...note,[e.target.name]:e.target.value})
     }
- console.log(note)
+    
 
-const handleSubmit = async () => { 
-let bodyData={"data":{"name": note.name,"email": note.email,"message":note.message}}
-const response = await fetch("https://kshykumr-backend.onrender.com/api/contacts", {
+const handleSubmit = async () => {
+  let bodyData={"data":{"name": note.name,"email": note.email,"message":note.message}}
+  const response = await fetch("https://kshykumr-backend.onrender.com/api/contacts", {
     method: 'POST',
     headers: {
-        'Content-Type': 'application/json'
+      'Content-Type': 'application/json'
     },
     body: JSON.stringify(bodyData)
-});
-const json = await response.json()
-console.log(json)
-
+  });
+  const json = await response.json()
+  console.log(json)
 }
 
   return (
@@ -45,7 +43,7 @@ console.log(json)
   timing="ease"
   iteration="2"
   fillMode="none"> */}
-  <div className='Line' style={{color:(mode==='white'?'white':'white'),fontFamily: "'Hind Siliguri', sans-serif",zIndex:'10'}}><b>GET IN TOUCH</b></div>
+  <div className='Line' style={{color:(mode==='white'?'white':'white'),fontFamily: "'Hind Siliguri', sans-serif"}}><b>GET IN TOUCH</b></div>
    {/* </MovingComponent> */}
    {/* </div> */}
 </div>
@@ -151,7 +149,7 @@ console.log(json)
         <textarea id='message' name='message'  onChange={onChange} placeholder='Drop Your Message'/>
       </label>
 
- <button type='submit' style={{width:'200px',border:'2px solid purple',borderRadius:'5px',background:'transparent',margin:"40px 30px",fontSize:'25px',fontFamily:'Bebas Neue',color:'white'}}>Submit</button>
+ <button type='submit' className="submit" style={{width:'200px',border:'2px solid purple',borderRadius:'5px',background:'transparent',margin:"40px 30px",fontSize:'25px',fontFamily:'Bebas Neue',color:'white'}}>Submit</button>
     </form>
     </section>
 

@@ -2,7 +2,7 @@ import React from 'react'
 import './home.css'
 import Img from './Ak.jpg'
 import Img2 from './Ak2.jpg'
-import Img1 from './Akshay.jpg'
+import Img1 from './Akshay.png'
 
 // import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
@@ -43,8 +43,9 @@ const Home = () => {
     <div className="about2 ">
 
     <div className="image d-flex flex-column justify-content-center align-items-center " >
-      <div className="photo my-3">
-      <img src={Img1} alt="Akshay"  style={{height:'200px',width:'200px'}}/>
+      <div className="photo my-3" >
+
+      <img src={Img1} alt="Akshay" style={{backgroundColor:(mode==='white'?'#ff9966':'#d4af37')}}/>
       </div>
     </div>
 
@@ -52,12 +53,12 @@ const Home = () => {
 
 <div className="data" style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white'),fontFamily:"'Hind Siliguri', sans-serif"}}>
     <div className='data1'>
-    <div  className='about' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}><b>ABOUT ME</b></div>
-    <div  className='akshay' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}>AKSHAY KUMAR</div>
-      <p className="aboutdesc" style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}>COMPUTER SCIENCE ENGINEERING STUDENT AT  UNIVERSITY INSTITUTE OF TECHNOLOGY.<br/>WEB DEVELOPER EXPERIENCED IN  HTML, CSS, JAVASCRIPT, REACTJS, NODEJS, EXPRESSJS, MONGODB.
+    <div  className='akshay' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white'),fontFamily:"'Phudu', cursive"}}>Hi!</div>
+    <div style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white'),fontSize:'22px',margin:'10px 0px'}}>I'm Akshay Kumar</div>
+      <p className="aboutdesc" style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}>Web Developer Experienced In HTML, CSS, JavaScript, ReactJs, NodeJs, ExpressJs, MongoDB. 
       </p>
-     <h2 className='additional' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}><b>ADDITIONAL COURSES</b></h2>
-      <p className='additionaldesc' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}>ARTIFICIAL INTELLIGENCE COURSE FROM CDAC MOHALI.</p>
+     <h2 className='additional' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}><b>Additional Courses </b></h2>
+      <p className='additionaldesc' style={{backgroundColor:(mode==='white'?'#FDF5E6':'black'),color:(mode==='white'?'black':'white')}}>Artificial Intelligence Course From C-DAC Mohali. </p>
     </div>
 
     </div>

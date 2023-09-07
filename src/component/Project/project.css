@@ -11,12 +11,14 @@
   justify-content: center;
   align-items: center;
 }
-.button1{
-  width:100%;
-}
+
+
+
 .titlename{
   font-weight: bold;
 }
+
+
 @keyframes identifier {
   0%    { color: red; }
   25%   { color: Maroon  }

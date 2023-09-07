@@ -21,6 +21,7 @@ const Akshay = () => {
             <Card style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),borderRadius:'0px'}}>
             <Card.Body>
             <Card.Title>OpenAI ChatGPT</Card.Title>
+            <Card.Text></Card.Text>
             <div className="d-flex flex-column">
             <a href='https://chat.openai.com/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><Button variant="primary" className='button1'>Visit Site</Button></a>
             </div>
@@ -34,6 +35,7 @@ const Akshay = () => {
             <Card style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),borderRadius:'0px'}}>
             <Card.Body>
             <Card.Title>MidJourney</Card.Title>
+            <Card.Text></Card.Text>
             <div className="d-flex flex-column">
             <a href='https://discord.com/channels/662267976984297473/1008571045445382216' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><Button variant="primary" className='button1'>Visit Site</Button></a>
             </div>
@@ -47,6 +49,7 @@ const Akshay = () => {
             <Card style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),borderRadius:'0px'}}>
             <Card.Body>
             <Card.Title>DeepAI</Card.Title>
+            <Card.Text></Card.Text>
             <div className="d-flex flex-column">
             <a href='https://deepai.org' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><Button variant="primary" className='button1'>Visit Site</Button></a>
             </div>
@@ -58,6 +61,7 @@ const Akshay = () => {
             <Card style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),borderRadius:'0px'}}>
             <Card.Body>
             <Card.Title>Roadmap</Card.Title>
+            <Card.Text></Card.Text>
             <div className="d-flex flex-column">
             <a href='https://roadmap.sh' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><Button variant="primary" className='button1'>Visit Site</Button></a>
             </div>
@@ -69,6 +73,7 @@ const Akshay = () => {
             <Card style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),borderRadius:'0px'}}>
             <Card.Body>
             <Card.Title>FreeCodeCamp</Card.Title>
+            <Card.Text></Card.Text>
             <div className="d-flex flex-column">
             <a href='https://www.freecodecamp.org/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><Button variant="primary" className='button1'>Visit Site</Button></a>
             </div>
