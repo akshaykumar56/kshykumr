@@ -1,14 +1,13 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
 import './Mongo.css'
 const Mongo = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
 <>
     <div className='container d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -19,7 +18,7 @@ const Mongo = () => {
 
 
     <div className='concepts' >
-    <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'	#303030')}}>
+    <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'	#303030')}}>
     <h4 className='my-5' >WATCH MY WORK WITH MONGODB AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/mongoDB' style={{textDecoration: 'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
     <div className="container my-5 justify-content-center">
         <div className="row" >
@@ -33,7 +32,7 @@ const Mongo = () => {
             Learn About MongoDB Fundamentals
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/mongo.txt' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/mongo.txt' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -47,7 +46,7 @@ const Mongo = () => {
              Learn To Insert data in MongoDB
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut1.js' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut1.js' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -62,7 +61,7 @@ const Mongo = () => {
             Learn To Find data in MongoDB
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut2.js' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut2.js' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -78,7 +77,7 @@ const Mongo = () => {
             Learn To Delete data from MongoDB
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut3.js' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut3.js' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -93,7 +92,7 @@ const Mongo = () => {
             Learn To Update data in MongoDB
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut4.js' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/blob/main/mongoDB/tut4.js' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -108,7 +107,7 @@ const Mongo = () => {
             Project to see MongoDB working
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/mongoDB/MongoWorking' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/mongoDB/MongoWorking' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

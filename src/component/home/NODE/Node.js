@@ -1,13 +1,13 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 
 import './node.css'
 const Node = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
 <>
     <div className='container d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -16,7 +16,7 @@ const Node = () => {
 
 
 <div className='concepts' >
-<div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'	#303030')}}>
+<div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'	#303030')}}>
 <h4 className='my-5'>WATCH MY WORK WITH NODE AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs' style={{textDecoration: 'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
 <div className="container my-5 justify-content-center">
             <div className="row">
@@ -29,7 +29,7 @@ const Node = () => {
             Developed a Website For a Dance Academy
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project%203' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project%203' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -44,7 +44,7 @@ const Node = () => {
             Developed a Responsive Website With The Help Of HTML, CSS , JavaScript.  
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project10' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project10' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -58,7 +58,7 @@ const Node = () => {
             Full Stack Web Development Project 
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/inotebook' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/inotebook' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -72,7 +72,7 @@ const Node = () => {
             How to create SignUp and Login Page
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/React/ReactR/LOGINSIGNUP' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/React/ReactR/LOGINSIGNUP' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -86,7 +86,7 @@ const Node = () => {
             Concept of EventEmitter
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/EventEmitter' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/EventEmitter' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

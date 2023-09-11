@@ -1,13 +1,12 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import './Express.css'
 const Express = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
     <>
     <div className='container d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -18,7 +17,7 @@ const Express = () => {
 
 
     <div className='concepts' >
-    <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'	#303030')}}>
+    <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'	#303030')}}>
     <h4 className='my-5'>WATCH MY WORK WITH EXPRESS AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express' style={{textDecoration:"none",color:(mode==='white'?'blue':'red')}} >GITHUB</a></h4>
     <div className="container my-5 justify-content-center">
              <div className="row" >
@@ -33,7 +32,7 @@ const Express = () => {
             How Files can be serves using HTTP
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/FileServingUsingHttp' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/FileServingUsingHttp' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -49,7 +48,7 @@ const Express = () => {
             Project Making Use Of Express
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/Express' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/Express' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -65,7 +64,7 @@ const Express = () => {
             Project Making Use Of Express
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/Express2' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/Express/Express2' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -81,7 +80,7 @@ const Express = () => {
             Project Making Use Of Express
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project10' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project10' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -97,7 +96,7 @@ const Express = () => {
             Project Making Use Of Express
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project%203' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/NodeJs/Project%203' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -112,7 +111,7 @@ const Express = () => {
             Project Making Use Of Express
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/test111' style={{color:'white',textDecoration: 'none'}}><Button  className='button1' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0',border:`3px solid ${newColor}`}}>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/test111' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

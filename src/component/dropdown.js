@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import './dropdown.css'
 function BasicExample() {
   const mode=localStorage.getItem("mode");
@@ -18,17 +18,17 @@ function closeNav(e) {
     <div className='dropdown' >
     <div id="mySidenav" className="sidenav" style={{backgroundColor:(mode==='white'?'#DCDCDC':'#696969'),opacity:'0.96'}}>
   <Link   className="closebtn" onClick={closeNav} style={{fontSize:'25px',color:(mode==='white'?'black':'white')}}>&times;</Link >
-  <Link  to="/home/html" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>HTML</Link >
-  <Link  to="/home/css" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>CSS</Link >
-  <Link  to="/home/javascript" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>JAVASCRIPT</Link >
-  <Link  to="/home/react" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>REACT</Link >
-  <Link  to="/home/node" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>NODE</Link >
-  <Link  to="/home/mongo" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>MONGODB</Link >
-  <Link  to="/home/python" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>PYTHON</Link >
-  <Link  to="/home/ai" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>AI</Link >
-  <Link  to="/home/c" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>DATASTRUCTURE</Link >
-  <Link  to="/home/cpp" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>CPP</Link >
-  <Link  to="/home/sql" style={{fontSize:'18px',color:(mode==='white'?'black':'white')}}>SQL</Link >
+  <NavLink className='nav-links1' to="/home/html" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>HTML</NavLink>
+  <NavLink className='nav-links1' to="/home/css" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>CSS</NavLink>
+  <NavLink className='nav-links1' to="/home/javascript" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>JAVASCRIPT</NavLink>
+  <NavLink className='nav-links1' to="/home/react" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>REACT</NavLink>
+  <NavLink className='nav-links1' to="/home/node" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>NODE</NavLink>
+  <NavLink className='nav-links1' to="/home/express" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>EXPRESS</NavLink>
+  <NavLink className='nav-links1' to="/home/mongo" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>MONGO</NavLink>
+  <NavLink className='nav-links1' to="/home/ai" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>AI</NavLink>
+  <NavLink className='nav-links1' to="/home/c" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>DATASTRUCTURE</NavLink>
+  <NavLink className='nav-links1' to="/home/cpp" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>CPP</NavLink>
+  <NavLink className='nav-links1' to="/home/sql" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>SQL</NavLink>
 </div>
 <button onClick={openNav} style={{border:'0px',background:'transparent'}}>
   <div style={{backgroundColor:(mode==='white'?'black':'white'),height:'3px',width:'20px',margin:'3px'}}></div>

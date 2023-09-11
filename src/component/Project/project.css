@@ -4,7 +4,9 @@
    animation-timing-function: ease-in-out;
    animation-iteration-count: infinite;
 }
-
+.card12{
+  min-height:190px;
+}
 .Web{
   display: flex;
   flex-direction: column;

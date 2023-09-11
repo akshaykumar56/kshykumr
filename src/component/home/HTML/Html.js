@@ -1,14 +1,14 @@
 import React from 'react'
 // import IMG from './HTML.jpg';
 import './html.css'
-
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 const Html = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
+
+
   return (
     <>
     <div className='container textAlign d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -18,7 +18,7 @@ const Html = () => {
     
 
     <div className='concepts' >
-   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'	#303030')}}>
+   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'	#303030')}}>
    <h4 className='my-5'>WATCH MY WORK WITH HTML AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML' style={{textDecoration: 'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
    <div className="container my-5 justify-content-center">
         <div className="row" >
@@ -32,7 +32,7 @@ const Html = () => {
             Here we can see what the basic structure of HTML document look like
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut1.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut1.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -47,7 +47,7 @@ const Html = () => {
             Here we see how to use Anchor tag and Img tag
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut2.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut2.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -61,7 +61,7 @@ const Html = () => {
             Here we see how to use Table and Lists in HTML
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut3.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut3.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -75,7 +75,7 @@ const Html = () => {
             Here we see how to use Form in HTML
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut5.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut5.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -90,7 +90,7 @@ const Html = () => {
             Here we see what are inline elements and block elements
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut6.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut6.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -105,7 +105,7 @@ const Html = () => {
             Here we see what are Ids and Classes in HTML
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut7.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut7.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -120,7 +120,7 @@ const Html = () => {
             Here we see what are HTML Entities
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut8.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut8.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -135,7 +135,7 @@ const Html = () => {
             Here we see what are HTML Semantics
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut9.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/HTML/blob/main/tut9.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

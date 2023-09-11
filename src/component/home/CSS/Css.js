@@ -1,13 +1,12 @@
 import React from 'react'
 import './Css.css'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Css = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
     <>
     <div className='container textAlign d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -16,7 +15,7 @@ const Css = () => {
     
 
     <div className='concepts'>
-   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'	#303030')}}>
+   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'	#303030')}}>
    <h4 className='my-5 '>WATCH MY WORK WITH CSS AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS' style={{textDecoration: 'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
    <div className="container my-5 justify-content-center">
              <div className="row" >
@@ -30,7 +29,7 @@ const Css = () => {
             Learn About CSS Selectors
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css01.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css01.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -45,7 +44,7 @@ const Css = () => {
               CSS Developer Tool
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css02.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css02.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -59,7 +58,7 @@ const Css = () => {
             Learn About CSS Border
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css05.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css05.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -73,7 +72,7 @@ const Css = () => {
             Learn About CSS Box Model
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css06.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css06.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -88,7 +87,7 @@ const Css = () => {
             Learn About Pseudo Selectors
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css08.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css08.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -103,7 +102,7 @@ const Css = () => {
             Learn About Display Property
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css10.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css10.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -118,7 +117,7 @@ const Css = () => {
             Learn About Position Property
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css11.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css11.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -133,7 +132,7 @@ const Css = () => {
             Learn About Visiblity and Z-index
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css12.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css12.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -147,7 +146,7 @@ const Css = () => {
             Learn About Flexbox
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css13.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css13.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -161,7 +160,7 @@ const Css = () => {
             Learn About Media Query
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css15.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css15.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -175,7 +174,7 @@ const Css = () => {
             Learn About Advance CSS Selectors
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css16.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css16.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -190,7 +189,7 @@ const Css = () => {
             Learn About Before and After Pseudo Selector
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css17.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css17.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -204,7 +203,7 @@ const Css = () => {
             Learn About Attributes and nth-child Pseudo Selectors
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css18.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css18.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -218,7 +217,7 @@ const Css = () => {
             Learn About Box shadow and Text shadow
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css19.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css19.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -232,7 +231,7 @@ const Css = () => {
             Learn About Keyframe 
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css21.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css21.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -247,7 +246,7 @@ const Css = () => {
             Learn About Transition Property
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css22.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css22.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -262,7 +261,7 @@ const Css = () => {
             Learn About CSS Grid 
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css24.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css24.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -276,7 +275,7 @@ const Css = () => {
             Learn About Templates
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css28.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/css28.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -290,7 +289,7 @@ const Css = () => {
             Learn About Colors
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/csscolor.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/csscolor.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -304,7 +303,7 @@ const Css = () => {
             Learn About Font
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/cssfont.html' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CSS/blob/main/cssfont.html' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

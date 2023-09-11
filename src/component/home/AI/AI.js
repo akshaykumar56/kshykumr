@@ -1,12 +1,11 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './ai.css'
 const AI = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
     <>
     <div className='container d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
@@ -16,7 +15,7 @@ const AI = () => {
 
   
     <div className='concepts'>
-   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'#303030')}}>
+   <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'#303030')}}>
    <h4 className='my-5'>WATCH MY WORK WITH AI AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence' style={{textDecoration: 'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
    
    <div className="container my-5 justify-content-center">
@@ -31,7 +30,7 @@ const AI = () => {
             Learn Python Fundamentals
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Python' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Python' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -45,7 +44,7 @@ const AI = () => {
             Learn About Numpy
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Numpy' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Numpy' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -60,7 +59,7 @@ const AI = () => {
             Learn About Pandas
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Pandas' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Pandas' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -76,7 +75,7 @@ const AI = () => {
             Learn About Matplotlib
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Matplotlib' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning/Matplotlib' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -91,7 +90,7 @@ const AI = () => {
             Learn About Supervised and Unsupervised Learning & Algorithms
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Machine%20Learning' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -106,7 +105,7 @@ const AI = () => {
             Learn About NLP
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning/NLP' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning/NLP' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -121,7 +120,7 @@ const AI = () => {
             Learn Deep Learning Algorithms
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -136,7 +135,7 @@ const AI = () => {
             Learn About Web Scrapping
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning/WebScrapping' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/Deep%20Learning/WebScrapping' style={{color:'white',textDecoration: 'none'}}><button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -150,7 +149,7 @@ const AI = () => {
             Learn About OpenCV
             </Card.Text>
             <div className="d-flex flex-column">
-           <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/OpenCV' style={{color:'white',textDecoration: 'none'}}> <Button  className='button1'>Visit Code</Button></a>
+           <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/ArtificialIntelligence/tree/main/OpenCV' style={{color:'white',textDecoration: 'none'}}> <button class="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

@@ -46,6 +46,20 @@ textarea{
 100%  { opacity:1; }
 }
 
+
+
+.card-links img{
+  transition: all .3s ease-in-out;
+} 
+
+.card-links a{
+text-decoration: none;
+}
+
+
+.card-links img:hover{
+  transform: scale(1.4);
+}
 .Line
 {
   font-size: 50px;
@@ -64,10 +78,10 @@ textarea{
     100%  { color: red; }
       }
 
-.card-links:hover{
+/* .card-links:hover{
     background-color:#3ded97;
     box-shadow: inset 450px 0 0 0 grey;
- }
+ } */
 
  .card-links{
     box-shadow: inset 0 0 0 0 grey;

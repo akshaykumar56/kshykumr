@@ -1,13 +1,13 @@
 import React from 'react'
 import './SQL.css'
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 
 const SQL = () => {
   const mode=localStorage.getItem("mode");
-  var newColor =(mode ==='white'?'black':'white');
+  var newColor =(mode ==='white'?'blue':'white');
   var backgroundColor=(mode==='white'?'white':'black');
-  var color=(mode==='white'?'black':'white');
+  var color=(mode==='white'?'blue':'white');
   return (
     <>
 
@@ -20,7 +20,7 @@ const SQL = () => {
 
 
   <div className='concepts' >
-  <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#DCDCDC':'#303030')}}>
+  <div className='concept my-2' style={{backgroundColor:(mode==='white'?'#ffdfff':'#303030')}}>
   <h4 className='my-5'>WATCH MY WORK WITH SQL AT MY <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql' style={{textDecoration:'none',color:(mode==='white'?'blue':'red')}}>GITHUB</a></h4>
   <div className="container my-5 justify-content-center">
             <div className="row" >
@@ -31,10 +31,10 @@ const SQL = () => {
             <Card.Body>
             <Card.Title className='titlename'>Constraints in SQL</Card.Title>
             <Card.Text>
-            Concept of Integrity Constraints in SQL               
+            Concept of Integrity Constraints in SQL and how to utilize them              
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Constaints' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Constaints' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -48,7 +48,7 @@ const SQL = () => {
             Operators Available in SQL
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Program' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Program' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -63,7 +63,7 @@ const SQL = () => {
             Inbuilt Functions in SQL
             </Card.Text>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Functions' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/tree/main/Functions' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -76,7 +76,7 @@ const SQL = () => {
             <Card.Body>
             <Card.Title className='titlename'>String Functions In SQL</Card.Title>
             <div className="d-flex flex-column">
-            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/blob/main/StringFunc/1.sql' style={{color:'white',textDecoration: 'none'}}><Button  className='button1'>Visit Code</Button></a>
+            <a target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql/blob/main/StringFunc/1.sql' style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span>Click!</span><span>Visit Code</span></button></a>
             </div>
             </Card.Body>
             </Card>

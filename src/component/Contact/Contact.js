@@ -2,6 +2,12 @@ import React from 'react'
 import IMG from './Ak.jpg'
 import IMG2 from './Ak2.png'
 import Card from 'react-bootstrap/Card';
+import Call from './call.png';
+import Gmail from './gmail.png'
+import Github from './github.png'
+import Insta from './instagram.png'
+import Skype from './skype.png'
+import Linked from './linkedin.png'
 // import MovingComponent from 'react-moving-text';
 import './Contact.css'
 // import Form from '../Form'
@@ -56,9 +62,9 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={1}>
     <Card  className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>Mobile</Card.Title>
+       <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px',filter:(mode==='white'?'invert(0)':'invert(1)')}}  src={Call} alt=''/>
         <Card.Text>
-         <b>8894055729</b> 
+         <b style={{fontFamily: "'exo', sans-serif"}}>8894055729</b> 
         </Card.Text>
       </Card.Body>
     </Card>
@@ -69,9 +75,9 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={2}>
     <Card className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>GMail</Card.Title>
+      <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px'}}  src={Gmail} alt=''/>
         <Card.Text>
-          <a href='https://mail.google.com/mail/u/?authuser=kshykumr@gmail.com'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'Anton', sans-serif"}}><b>kshykumr@gmail.com</b></a>
+          <a href='https://mail.google.com/mail/u/?authuser=kshykumr@gmail.com'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'exo', sans-serif"}}><b>kshykumr@gmail.com</b></a>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -81,9 +87,9 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={3}>
     <Card  className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>GitHub</Card.Title>
+      <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px',filter:(mode==='white'?'invert(0)':'invert(1)')}}  src={Github} alt=''/>
         <Card.Text>
-        <a href='https://github.com/akshaykumar56'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'Anton', sans-serif"}}><b>github.com/akshaykumar56</b></a>
+        <a href='https://github.com/akshaykumar56'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'exo', sans-serif"}}><b>github.com/akshaykumar56</b></a>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -92,9 +98,9 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={4}>
     <Card className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>LinkedIn</Card.Title>
+      <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px',filter:(mode==='white'?'invert(0)':'invert(1)')}}  src={Linked} alt=''/>
         <Card.Text>
-        <a href='https://linkedin.com/in/akshaypalsra'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'Anton', sans-serif"}}><b>linkedin.com/in/akshaypalsra</b></a>
+        <a href='https://linkedin.com/in/akshaypalsra'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'exo', sans-serif"}}><b>linkedin.com/in/akshaypalsra</b></a>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -103,9 +109,9 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={5}>
     <Card className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>Instagram</Card.Title>
+      <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px',filter:(mode==='white'?'invert(0)':'invert(1)')}}  src={Insta} alt=''/>
         <Card.Text>
-        <a href='https://www.instagram.com/kshykumr28'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'Anton', sans-serif"}}><b>kshykumr28</b></a>
+        <a href='https://www.instagram.com/kshykumr28'  target="_blank" rel="noopener noreferrer" style={{color:(mode==='white'?'black':'white'),fontFamily: "'exo', sans-serif"}}><b>kshykumr28</b></a>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -114,9 +120,10 @@ const handleSubmit = async () => {
     <div className="col-md-4 my-3" key={6}>
     <Card className="card card-links" style={{backgroundColor:(mode==='white'?'white':'#212529'),borderRadius:'0px'}}>
       <Card.Body>
-        <Card.Title style={{fontSize:'25px'}}>Skype</Card.Title>
+      <img style={{height:'40px',width:'40px',margin:'5px 0px 10px 0px',filter:(mode==='white'?'invert(0)':'invert(1)')}}  src={Skype} alt=''/>
+
         <Card.Text>
-        <b style={{fontFamily: "'Anton', sans-serif"}}>live:.cid.964c207dbbbb11f</b>
+        <b style={{fontFamily: "'exo', sans-serif"}}>live:.cid.964c207dbbbb11f</b>
         </Card.Text>
       </Card.Body>
     </Card>
