@@ -14,7 +14,12 @@
   align-items: center;
 }
 
-
+.our-projects{
+  font-weight: 400;
+  background: -webkit-linear-gradient(90deg,#3CCDE9,#65C891);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 .titlename{
   font-weight: bold;

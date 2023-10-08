@@ -2,8 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Nav from 'react-bootstrap/Nav';
-
-
+import {NavLink} from 'react-router-dom';
  
 import './Navbar.css'
 
@@ -20,7 +19,6 @@ function BasicExample(props) {
   backgroundColor:(!mode?'#212529':mode),
   boxShadow: '0px 15px 10px -15px #111'
 }
-let d=window.location.pathname;
   return (
     <>
     <div className='Navbar'>
@@ -28,7 +26,7 @@ let d=window.location.pathname;
     <Navbar className='d-flex justify-content-around  border-bottom border-success back' style={style1}>
       <Container className='d-flex justify-content-between'>
         <div > 
-        <Navbar.Brand className='logo' href="/akshay" style={{color:(mode==='white'?'#212529':'white'),fontFamily: "'exo', sans-serif"}} ><b>AKSHAY</b></Navbar.Brand>
+        <Navbar.Brand className='logo' href="/akshay" style={{color:(mode==='white'?'#212529':'#fccb06'),fontFamily:'BDSuper'}}><b>AKSHAY</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </div>
        
@@ -36,14 +34,14 @@ let d=window.location.pathname;
         <Navbar.Collapse id="basic-navbar-nav">
           
           <Nav className="me-auto">
-            <Nav.Link id='icon1' className='icon  nav-links1' href="/home" style={d==='/home' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><span className="material-symbols-outlined back">home</span></Nav.Link>
-            <Nav.Link className='icon nav-links1' href="/contact" style={d==='/contact' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}} ><span className="material-symbols-outlined back">contacts</span></Nav.Link>
-            <Nav.Link className='icon nav-links1' href="/project" style={d==='/project' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}} ><span className="material-symbols-outlined back">work</span></Nav.Link>
+            <NavLink id='icon1' className='icon  nav-links2' to="/" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><span className="material-symbols-outlined back">home</span></NavLink>
+            <NavLink className='icon nav-links2' to="/contact" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })} ><span className="material-symbols-outlined back">contacts</span></NavLink>
+            <NavLink className='icon nav-links2' to="/project" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><span className="material-symbols-outlined back">work</span></NavLink>
             
           </Nav>
          
          <div className="mx-1">
-      <div className='icon' onClick={props.toggleMode} style={{cursor:'pointer',color:(mode==='white'?'blue':'#C19A6B')}}>{mode==='white'?<span className="material-symbols-outlined">dark_mode</span>:<span className="material-symbols-outlined " >light_mode</span>}</div>
+      <div className='icon' onClick={props.toggleMode} style={{cursor:'pointer',color:(mode==='white'?'black':'white')}}>{mode==='white'?<span className="material-symbols-outlined">dark_mode</span>:<span className="material-symbols-outlined " >light_mode</span>}</div>
       
        </div>
        
@@ -56,43 +54,18 @@ let d=window.location.pathname;
 
 
     <div className='nav2'>
-    <Nav activeKey="/home"  className='d-flex justify-content-center sticky-top' style={style2}>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-1" href="/home/html"style={d==='/home/html' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>HTML</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-2" href="/home/css" style={d==='/home/css' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>CSS</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-3" href="/home/javascript" style={d==='/home/javascript' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>JAVASCRIPT</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-4" href="/home/react" style={d==='/home/react' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>REACT</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-5" href="/home/node" style={d==='/home/node' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>NODE</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-6" href="/home/express" style={d==='/home/express' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>EXPRESS</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-7" href="/home/mongo" style={d==='/home/mongo' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>MONGODB</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-8" href="/home/python" style={d==='/home/python' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>PYTHON</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-9" href="/home/ai" style={d==='/home/ai' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>AI</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-10" href="/home/c" style={d==='/home/c' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>DATASTRUCTURE</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-11" href="/home/cpp" style={d==='/home/cpp' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>CPP</div></Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-      <Nav.Link className='nav-links' eventKey="link-12" href="/home/sql" style={d==='/home/sql' ? {color:(mode==='white'?'red':'white')} : {color:(mode==='white'?'blue':'#C19A6B')}}><div className='back'>SQL</div></Nav.Link>
-      </Nav.Item>
+    <Nav  className='d-flex justify-content-center sticky-top' style={style2}>
+    <NavLink className='nav-links' to="/home/html" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>HTML</div></NavLink>
+  <NavLink className='nav-links' to="/home/css" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>CSS</div></NavLink>
+  <NavLink className='nav-links' to="/home/javascript" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>JAVASCRIPT</div></NavLink>
+  <NavLink className='nav-links' to="/home/react" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>REACT</div></NavLink>
+  <NavLink className='nav-links' to="/home/node" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>NODE</div></NavLink>
+  <NavLink className='nav-links' to="/home/express" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>EXPRESS</div></NavLink>
+  <NavLink className='nav-links' to="/home/mongo" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>MONGO</div></NavLink>
+  <NavLink className='nav-links' to="/home/ai" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>AI</div></NavLink>
+  <NavLink className='nav-links' to="/home/c" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>DATASTRUCTURE</div></NavLink>
+  <NavLink className='nav-links' to="/home/cpp" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>CPP</div></NavLink>
+  <NavLink className='nav-links' to="/home/sql" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><div className='back'>SQL</div></NavLink>
     </Nav>
     </div>
     </div>

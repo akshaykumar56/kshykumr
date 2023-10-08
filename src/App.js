@@ -4,7 +4,6 @@ import {memo} from 'react'
 import {useState} from 'react';
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './component/Navbar';
-import Alert from './component/Alert';
 import Hamberger from './component/Hamberger'
 import Project from './component/Project/Project';
 import Contact from './component/Contact/Contact';
@@ -26,18 +25,8 @@ import SQL from './component/home/SQL/SQL';
 import Akshay from './component/Akshay';
 
 function App() {
-  const [alert, setAlert] = useState(null);
-  const showAlert = (message, type)=>{
-    setAlert({
-      msg: message,
-      type: type
-    })
-    setTimeout(() => {
-    setAlert(null);
-    }, 2000);
-}
+  
 
- console.log(alert) 
 
   const [T,setT]=useState(1);
   
@@ -86,12 +75,10 @@ function App() {
    <BrowserRouter>
    <Navbar  hiddden={hidden} toggleMode={toggleMode}/>
    <Hamberger/>
-   <Alert alert={alert}/>
     <Routes>
     <Route exact path="/" element={<Home/>}/>
-    <Route exact path="/home" element={<Home/>}/>
     <Route exact path="/project" element={<Project/>}/>
-    <Route exact path="/contact" element={<Contact showAlert={showAlert}/>}/>
+    <Route exact path="/contact" element={<Contact/>}/>
     <Route exact path="/akshay" element={<Akshay/>}/>
 
 

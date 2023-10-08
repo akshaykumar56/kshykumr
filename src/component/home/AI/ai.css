@@ -1,6 +1,7 @@
 .card1{
     min-height:190px;
-    border-radius: 10px !important;
+    border: 0px;
+
 }
 
 .button1{
@@ -127,6 +128,14 @@ background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
     padding:0px 5px;
     /* border-top: 2px solid grey; */
 }
+
+.our-services{
+  font-weight: 400;
+  background: -webkit-linear-gradient(90deg,#3CCDE9,#65C891);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
 
 .concept{
     padding: 10px 50px;

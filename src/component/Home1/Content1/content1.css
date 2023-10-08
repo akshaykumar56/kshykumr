@@ -1,0 +1,161 @@
+.content1{
+    display:flex;
+    flex-direction:row;
+    height:480px;
+    margin:112px 100px 0px 100px
+}
+.text1{
+    height:auto;
+    width:60%;
+
+}
+
+
+.button1-home{
+    width: 200px;
+}
+
+
+.text11{
+    font-size:25px; 
+    
+}
+.text111{
+    font-size: 74px;
+    line-height:80px;
+    font-family:BDSuper;
+    font-weight:200px !important;
+}
+.image1{
+   height:300px;
+   width:40%;
+}
+
+#mainDiv {
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    perspective: 800px;
+    
+}
+
+#boxDiv {
+    width: 200px;   
+    transform-style: preserve-3d; 
+    animation: rotate 15s linear infinite;
+}
+
+#boxDiv div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    opacity: 1 ;
+    color: white;
+}
+
+#front {
+    transform: translateZ(100px);
+    background: white;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center center;
+}
+
+
+#back {
+    transform: rotateY(180deg) translateZ(100px);
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover ; 
+    background-position: center center;  
+}
+
+#left {
+    transform: rotateY(-90deg) translateX(-100px);
+    transform-origin: left;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover ; 
+    background-position: center center; 
+}
+
+#right {
+    transform: rotateY(90deg) translateX(100px);
+    transform-origin: right;
+    background: white;  
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center center;  
+}
+
+#top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top;
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px ;   
+}
+
+#bottom {
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom;
+    background: white; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover ;   
+}
+
+@keyframes rotate {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
+}
+
+
+.shadow {
+    width:200px;
+    height:200px;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 0 50px 50px rgba(0,0,0,0.5);
+    transform: rotateX(90deg) translateZ(-190px) rotateY(180deg) translateX(0px);
+
+}
+
+
+@media only screen and (max-width:900px) {
+    .content1{
+        display:flex;
+        flex-direction:column-reverse;
+        height:auto;
+        margin:50px 30px 0px 30px;
+    }
+    .text1{
+        height:auto;
+        width:100%;
+        text-align: justify;
+    }
+    .image1{
+        height:230px;
+        width:100%;
+        margin-bottom: 80px;
+     }
+
+     .text111{
+        font-size: 42px;
+        line-height:45px;
+    }
+
+    .text11{
+        font-size:18px;
+        
+    }
+    .shadow{
+        display: none !important
+    }
+}
+
+@media only screen and (max-width:600px) {
+.button1-home{
+    width: 125px;
+}
+}

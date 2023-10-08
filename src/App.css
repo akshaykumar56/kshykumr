@@ -4,6 +4,12 @@
 
 
 
+@font-face {
+  font-family: "BDSuper";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url("./fonts/BDSupperBold.ttf") format("truetype");
+    font-weight:normal;
+}
 
 
 .App-logo {

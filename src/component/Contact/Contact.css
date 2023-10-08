@@ -1,33 +1,6 @@
-.form{
-  background: linear-gradient(45deg,black 10%, transparent), url("./Ak3.jpg") no-repeat;
-  background-size: cover;
-}
-
-
-input{
-  height:40px;
-  width:600px;
-  margin:10px 0px;
-  border-radius:10px;
-}
-textarea{
-  height:150px;
-  width:600px;
-  margin:10px 0px;
-  border-radius:10px;
-}
-.form{
-  width:84vw;
-  height:auto;
-  margin:20px;
-  padding:30px 40px;
-}
-
-
 .contact
 {
     display:flex;
-    /* flex-direction:row; */
     justify-content:center;
     align-items:center;
     animation-name:identifier1;
@@ -63,10 +36,6 @@ text-decoration: none;
 .Line
 {
   font-size: 50px;
-  animation-name:identifier2;
-  animation-duration: 8s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
 }
 
 @keyframes identifier2
@@ -78,80 +47,185 @@ text-decoration: none;
     100%  { color: red; }
       }
 
-/* .card-links:hover{
-    background-color:#3ded97;
-    box-shadow: inset 450px 0 0 0 grey;
- } */
 
  .card-links{
     box-shadow: inset 0 0 0 0 grey;
   transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
  }
 
-@media only screen and (max-width:900px){
-.contact
-{
+
+
+
+  .Contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:100px 100px;
+}
+.contact-input1{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center
-}
-.text{
+    flex-direction:row;
     width:100%;
 }
-.form{
-  width:95vw;
-    width:100%;
-    margin: 0;
-    padding: 0;
+
+.contact-input1-input{
+  width: 50%;
+  border-bottom: 1px solid red !important;
 }
 
-.Line
-{
-  font-size: 40px;
+.css-mqt2s5{
+  color:red !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+  color: red !important;
+}
+
+.css-mnn31{
+  color: red !important;
+}
+.contact-input2-input{
+  border-bottom: 1px solid red !important;
+}
+.Contact-Box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact-Box-1{
+    width: 70%;
+    
 }
 
 
-input{
-  height:40px;
-  width:400px;
-  margin:10px 0px;
-  border-radius:10px;
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+  color:red !important;
 }
-textarea{
-  height:150px;
-  width:400px;
-  margin:10px 0px;
-  border-radius:10px;
+.Contact-Box-2{
+    width: 30%;
+    padding:10px 50px;
 }
-.form{
-  width:80vw;
-  height:auto;
-  margin:20px 0px;
-  padding:30px 0px;
+
+.Contact-Button .button-radio{
+    padding:10px 10px;
+    width:180px;
+    color:black;
+    border:2px solid black;
+    background-color:transparent;
+    border-radius: 5px;
+    margin:10px 10px 0px 0px;
+    padding:0;
+
 }
+
+.Contact-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+label:checked {
+    background-color: blue;
+ } 
+.Contact-Heading-1{
+    font-size:90px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    font-weight:800;
+}
+
+.Contact-Heading-2{
+    font-size:90px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    font-weight:800;
 }
 
 
-@media only screen and (max-width:650px){
+.button-radio {
+    margin: 0 10px 0 0;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+  .button-radio label,
+  .button-radio input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
   
-  input{
-    height:40px;
-    width:300px;
-    margin:10px 0px;
-    border-radius:10px;
+  .button-radio input[type="radio"] {
+    opacity: 0.011;
   }
-  textarea{
-    height:150px;
-    width:300px;
-    margin:10px 0px;
-    border-radius:10px;
+  
+  .button-radio input[type="radio"]:checked + label {
+    background: black;
+    color:white;
+    border-radius: 4px;
   }
-  .form{
-    width:94vw;
-    height:auto;
-    margin:20px 0px;
-    padding:30px 0px;
+  
+  .button-radio label {
+    cursor: pointer;
+    z-index: 90;
+    line-height: 1.8em;
   }
+
+@media only screen and (max-width:900px) {
+    .Contact-Heading-1{
+        font-size:40px;
+        justify-content: center;
+
+    }
+    
+    .Contact-Heading-2{
+        font-size:40px;
+        justify-content: center;
+    }
+    .Contact-Box{
+        flex-direction: column;
+    } 
+
+    .Contact-Box-1{
+        width: 100%;
+        
+    }
+    
+    .Contact-Box-2{
+        width: 100%;
+        padding:0;
+        margin: 50px;
+    }
+
+    .Contact{
+        margin:20px 20px;
+    }
+
+    .contact-input1{
+        flex-direction:column;
+    }
+    
+    .contact-input1-input{
+      width: 100%;
+    }
+    .Contact-Box-11{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   }
