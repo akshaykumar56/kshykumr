@@ -7,6 +7,8 @@ import IEDU from './IEDU.png'
 import INOT from './INOT.png'
 import API from './API.png'
 import HIMCO from './HIMCO.png'
+
+import SILICON from './Silicon.png'
 import './project.css'
 const Project = () => {
   const mode=localStorage.getItem("mode");
@@ -137,6 +139,21 @@ const Project = () => {
             </Card.Text>
             <div className="d-flex flex-column">
             <a target="_blank" rel="noreferrer" href='https://www.himcofed.com/' style={{color:'white',textDecoration: 'none'}} ><button className="custom-btn btn-12" style={{margin:'20px 0px'}}><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
+            </div>
+            </Card.Body>
+            </Card>
+              </div>
+
+              <div className="col-md-4 my-3" key={7}>
+            <Card  style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
+            <Card.Img variant="top" src={SILICON} style={{borderRadius:'0px'}}/>
+            <Card.Body>
+            <Card.Title className='titlename'>Web Dev Project</Card.Title>
+            <Card.Text>
+              In this project I build a Portfolio Website for a company named Silicon Garage.
+            </Card.Text>
+            <div className="d-flex flex-column">
+            <a target="_blank" rel="noreferrer" href='https://www.silicongarage.in/' style={{color:'white',textDecoration: 'none'}} ><button className="custom-btn btn-12" style={{margin:'20px 0px'}}><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>

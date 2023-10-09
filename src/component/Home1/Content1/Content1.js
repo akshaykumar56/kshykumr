@@ -13,7 +13,7 @@ function BasicExample() {
     <div className='content1'>
         <div className='text1' >
         <div className='text11'><div className='text111' >TECHNOLOGY IS BEST WHEN IT BRINGS PEOPLE TOGETHER</div>
-        <div className='text11' style={{margin:'10px 0px',fontFamily:'lato'}}>Every line of code is a story waiting to be told, and technology is the storyteller of our modern era</div>
+        <div className='text11' style={{margin:'10px 0px'}}>Every line of code is a story waiting to be told, and technology is the storyteller of our modern era</div>
         <div className='button-home' style={{display:'flex',flexDirection:'row',width:'!00',justifyContent:'flex-start'}}>
             <Link to='/contact' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#65C891',margin:'30px 30px 0px 0px',fontFamily: 'Montserrat'}}>Contact</div></Link>
             <Link to='/project' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#3CCDE9',margin:'30px 0px 0px 0px',fontFamily: 'Montserrat'}}>Projects</div></Link>
@@ -24,12 +24,12 @@ function BasicExample() {
       <div className='image1' style={{display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
       <div id="mainDiv">
     <div id="boxDiv">
-        <div id="front" style={{backgroundImage:`url(${Img1})`}}></div>
-        <div id="back" style={{backgroundImage:`url(${Img2})`}}></div>
-        <div id="left" style={{backgroundImage:`url(${Img3})`}}></div>
-        <div id="right" style={{backgroundImage:`url(${Img4})`}}></div>
-        <div id="top" style={{backgroundImage:`url(${Img4})`}}></div>
-        <div id="bottom" style={{backgroundImage:`url(${Img4})`}}></div>
+        <div id="front" style={{backgroundImage:`url(${Img1})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
+        <div id="back" style={{backgroundImage:`url(${Img2})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
+        <div id="left" style={{backgroundImage:`url(${Img3})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
+        <div id="right" style={{backgroundImage:`url(${Img4})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
+        <div id="top" style={{backgroundImage:`url(${Img4})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
+        <div id="bottom" style={{backgroundImage:`url(${Img4})`,backgroundColor:(mode==='white'?'black':'white')}}></div>
         
         <div className="shadow" style={{backgroundColor:(mode==='white'?'grey':'grey')}}></div>
     </div>

@@ -16,6 +16,11 @@
 }
 
 
+.button1-home:hover{
+background-color: green !important;
+}
+
+
 .text11{
     font-size:25px; 
     
@@ -55,7 +60,7 @@
 
 #front {
     transform: translateZ(100px);
-    background: white;
+   
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center center;
@@ -64,7 +69,7 @@
 
 #back {
     transform: rotateY(180deg) translateZ(100px);
-    background: white;
+   
     background-repeat: no-repeat;
     background-size: cover ; 
     background-position: center center;  
@@ -73,7 +78,7 @@
 #left {
     transform: rotateY(-90deg) translateX(-100px);
     transform-origin: left;
-    background: white;
+   
     background-repeat: no-repeat;
     background-size: cover ; 
     background-position: center center; 
@@ -82,7 +87,7 @@
 #right {
     transform: rotateY(90deg) translateX(100px);
     transform-origin: right;
-    background: white;  
+     
     background-repeat: no-repeat;
     background-size: cover ;
     background-position: center center;  
@@ -91,7 +96,7 @@
 #top {
     transform: rotateX(-90deg) translateY(-100px);
     transform-origin: top;
-    background: white;
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: 600px ;   
@@ -100,7 +105,7 @@
 #bottom {
     transform: rotateX(90deg) translateY(100px);
     transform-origin: bottom;
-    background: white; 
+    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover ;   
@@ -118,6 +123,7 @@
     background: rgba(0,0,0,0.5);
     box-shadow: 0 0 50px 50px rgba(0,0,0,0.5);
     transform: rotateX(90deg) translateZ(-190px) rotateY(180deg) translateX(0px);
+    border-radius: 10px;
 
 }
 

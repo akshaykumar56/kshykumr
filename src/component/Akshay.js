@@ -28,7 +28,7 @@ const Akshay = () => {
             <Card.Title>OpenAI ChatGPT</Card.Title>
             <Card.Text></Card.Text>
             <div className="d-flex flex-column">
-            <a href='https://chat.openai.com/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Code</span></button></a>
+            <a href='https://chat.openai.com/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -42,7 +42,7 @@ const Akshay = () => {
             <Card.Title>MidJourney</Card.Title>
             <Card.Text></Card.Text>
             <div className="d-flex flex-column">
-            <a href='https://discord.com/channels/662267976984297473/1008571045445382216' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Code</span></button></a>
+            <a href='https://discord.com/channels/662267976984297473/1008571045445382216' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -56,7 +56,7 @@ const Akshay = () => {
             <Card.Title>DeepAI</Card.Title>
             <Card.Text></Card.Text>
             <div className="d-flex flex-column">
-            <a href='https://deepai.org' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Code</span></button></a>
+            <a href='https://deepai.org' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -68,7 +68,7 @@ const Akshay = () => {
             <Card.Title>Roadmap</Card.Title>
             <Card.Text></Card.Text>
             <div className="d-flex flex-column">
-            <a href='https://roadmap.sh' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Code</span></button></a>
+            <a href='https://roadmap.sh' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>
@@ -80,7 +80,7 @@ const Akshay = () => {
             <Card.Title>FreeCodeCamp</Card.Title>
             <Card.Text></Card.Text>
             <div className="d-flex flex-column">
-            <a href='https://www.freecodecamp.org/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Code</span></button></a>
+            <a href='https://www.freecodecamp.org/' target="_blank" rel="noreferrer" style={{color:'white',textDecoration: 'none'}}><button className="custom-btn btn-12"><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
             </div>
             </Card.Body>
             </Card>

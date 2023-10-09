@@ -23,7 +23,6 @@ function Service() {
 <div style={{margin:'100px 10px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
     <div style={{display:'flex',justifyContent:'center',flexDirection:'column'}}>
     <div  className='our-services' style={{fontSize:'40px',fontFamily:'BDSuper',textAlign:'center'}}>Technology I Work With</div>
-     <div style={{display:"flex",justifyContent:'center',fontSize:'25px',fontWeight:'600',textAlign:'center'}}> I Embrece Cutting Edge Technologies</div>
     </div>
 
  </div>
