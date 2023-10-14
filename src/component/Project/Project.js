@@ -21,10 +21,10 @@ const Project = () => {
     <div style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
       <div className="d-flex flex-column justify-content-center align-items-center">
       <div className='container textAlign d-flex flex-column align-items-center justify-content-around my-5'>
-    <h2 className='my-3 our-projects' style={{fontFamily:'BDSuper',fontSize:'50px'}}>MY WORK</h2>
+    <h2 className='my-3 our-projects' style={{fontFamily:'BDSuper',fontSize:'35px'}}>PROJECTS</h2>
     </div>
          <div className='Web' style={{width:'100%'}}> 
-         <h3 className="my-3 "  style={{fontSize:'30px',fontWeight:'600'}}>WEB DEVELOPMENT</h3>
+         <h3 className="my-3 "  style={{fontSize:'25px',fontWeight:'600',fontFamily:'BDSuper'}}>WEB DEVELOPMENT</h3>
          <div className="container my-3  justify-content-center">
              <div className="row" >
              <div className="col-md-4 my-3" key={1}>
@@ -168,7 +168,7 @@ const Project = () => {
 
 
         <div className='Web my-5' style={{width:'100%'}}> 
-         <h3 className="my-3" style={{fontSize:'30px',fontWeight:'600'}}>ARTIFICIAL INTELLIGENCE</h3>
+         <h3 className="my-3" style={{fontSize:'25px',fontWeight:'600',fontFamily:'BDSuper'}}>ARTIFICIAL INTELLIGENCE</h3>
          <div className="container my-3  justify-content-center" >
              <div className="row" >
              <div className="col-md-4 my-3" key={6}>

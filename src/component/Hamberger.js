@@ -5,9 +5,9 @@ function BasicExample(props) {
   const mode=localStorage.getItem("mode")
 
   const style1={
-    backgroundColor:(!mode?'#212529':mode),
+    backgroundColor:(!mode?'black':mode),
     padding:'5px 0px 0px 40px',
-    boxShadow:'rgb(17, 17, 17) 0px 15px 10px -15px',
+    boxShadow:`0px 15px 10px -15px ${(mode==='white'?'black':'white')}`
   
   }
 

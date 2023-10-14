@@ -26,8 +26,8 @@ background-color: green !important;
     
 }
 .text111{
-    font-size: 74px;
-    line-height:80px;
+    font-size: 60px;
+    line-height:60px;
     font-family:BDSuper;
     font-weight:200px !important;
 }
@@ -147,8 +147,8 @@ background-color: green !important;
      }
 
      .text111{
-        font-size: 42px;
-        line-height:45px;
+        font-size: 50px;
+        line-height:50px;
     }
 
     .text11{
@@ -163,5 +163,9 @@ background-color: green !important;
 @media only screen and (max-width:600px) {
 .button1-home{
     width: 125px;
+}
+.text111{
+    font-size: 35px;
+    line-height:35px;
 }
 }

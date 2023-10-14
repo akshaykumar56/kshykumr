@@ -16,7 +16,7 @@ function closeNav(e) {
 
   return (
     <div className='dropdown' >
-    <div id="mySidenav" className="sidenav" style={{backgroundColor:(mode==='white'?'#DCDCDC':'#696969'),opacity:'0.985'}}>
+    <div id="mySidenav" className="sidenav" style={{backgroundColor:(mode==='white'?'#F5F5F5':'#181818'),opacity:'0.985'}}>
   <Link   className="closebtn" onClick={closeNav} style={{fontSize:'25px',color:(mode==='white'?'black':'white')}}>&times;</Link >
   <div onClick={closeNav}><NavLink className='nav-links1' to="/home/html" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>HTML</NavLink></div>
   <div onClick={closeNav}><NavLink className='nav-links1' to="/home/css" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>CSS</NavLink></div>

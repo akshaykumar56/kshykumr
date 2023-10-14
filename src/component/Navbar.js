@@ -11,33 +11,33 @@ function BasicExample(props) {
   const mode=localStorage.getItem("mode")
 
   const style1={
-    backgroundColor:(!mode?'#212529':mode)
+    backgroundColor:(!mode?'black':mode),
   }
 
 
  const style2={
-  backgroundColor:(!mode?'#212529':mode),
-  boxShadow: '0px 15px 10px -15px #111'
+  backgroundColor:(!mode?'black':mode),
+  boxShadow: `0px 15px 10px -15px ${(mode==='white'?'black':'grey')}`,
+  borderTop:`1px solid grey`
 }
   return (
     <>
     <div className='Navbar'>
     <div className='nav1'>
-    <Navbar className='d-flex justify-content-around  border-bottom border-success back' style={style1}>
+    <Navbar className='d-flex justify-content-around  border-success back' style={style1}>
       <Container className='d-flex justify-content-between'>
         <div > 
-        <Navbar.Brand className='logo' href="/akshay" style={{color:(mode==='white'?'#212529':'#fccb06'),fontFamily:'BDSuper'}}><b>AKSHAY</b></Navbar.Brand>
+        <Navbar.Brand className='logo' href="/akshay" style={{color:(mode==='white'?'black':'white'),fontFamily:'Kanit'}}><b>AKSHAY</b></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </div>
        
-        <div>
+        <div> 
         <Navbar.Collapse id="basic-navbar-nav">
           
           <Nav className="me-auto">
-            <NavLink id='icon1' className='icon  nav-links2' to="/" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><span className="material-symbols-outlined back">home</span></NavLink>
-            <NavLink className='icon nav-links2' to="/contact" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })} ><span className="material-symbols-outlined back">contacts</span></NavLink>
-            <NavLink className='icon nav-links2' to="/project" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><span className="material-symbols-outlined back">work</span></NavLink>
-            
+            <div className='textDescription' style={{position:'relative'}}><NavLink id='icon1' className='icon  nav-links2' to="/" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white') })}><span className="material-symbols-outlined back">home</span></NavLink><div className='text-Description-inner' style={{position:'absolute',zIndex:'20000',color:(mode==='white'?'white':'black'),backgroundColor:(mode==='white'?'black':'white'),borderRadius:'5px',padding:'2px 5px'}}>Home</div></div>
+            <div className='textDescription' style={{position:'relative'}}><NavLink className='icon nav-links2' to="/contact" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white')})} ><span className="material-symbols-outlined back">contacts</span></NavLink><div className='text-Description-inner' style={{position:'absolute',zIndex:'20000',color:(mode==='white'?'white':'black'),backgroundColor:(mode==='white'?'black':'white'),borderRadius:'5px',padding:'2px 5px'}}>Contact</div></div>
+            <div className='textDescription' style={{position:'relative'}}><NavLink className='icon nav-links2' to="/project" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'#fccb06') : (mode==='white'?'black':'white')})}><span className="material-symbols-outlined back">work</span></NavLink><div className='text-Description-inner' style={{position:'absolute',zIndex:'20000',color:(mode==='white'?'white':'black'),backgroundColor:(mode==='white'?'black':'white'),borderRadius:'5px',padding:'2px 5px'}}>Project</div></div>
           </Nav>
          
          <div className="mx-1">

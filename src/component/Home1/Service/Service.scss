@@ -8,6 +8,10 @@
 
 }
 
+.ticker__item img:hover{
+filter: invert(70%) !important;
+}
+
 .Service-Project-Heading{
   font-size: 50px;
 }

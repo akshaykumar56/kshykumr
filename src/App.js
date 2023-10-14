@@ -50,7 +50,7 @@ function App() {
   localStorage.setItem("color", "#909090");
   var toggleMode=()=>{
     if(A==='1'){
-      localStorage.setItem("mode", "#212529");
+      localStorage.setItem("mode", "black");
       setA('2')
     }
     else{
