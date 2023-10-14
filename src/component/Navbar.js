@@ -11,12 +11,12 @@ function BasicExample(props) {
   const mode=localStorage.getItem("mode")
 
   const style1={
-    backgroundColor:(!mode?'black':mode),
+    backgroundColor:(!mode?'black !important':mode),
   }
 
 
  const style2={
-  backgroundColor:(!mode?'black':mode),
+  backgroundColor:(!mode?'black !important':mode),
   boxShadow: `0px 15px 10px -15px ${(mode==='white'?'black':'grey')}`,
   borderTop:`1px solid grey`
 }
