@@ -7,8 +7,8 @@ function BasicExample(props) {
   const style1={
     backgroundColor:(!mode?'black':mode),
     padding:'5px 0px 0px 40px',
-    boxShadow:`0px 15px 10px -15px ${(mode==='white'?'black':'white')}`
-  
+    boxShadow:`0px 15px 10px -15px ${(mode==='white'?'black':'white')}`,
+    borderTop:`1px solid ${(mode==='white'?'black':'white')}`
   }
 
   return (
