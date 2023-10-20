@@ -14,7 +14,7 @@ const Cpp = () => {
 
     <div className='concepts' >
     <div className='concept my-5' style={{backgroundColor:(mode==='white'?'white':'black')}}>
-    <h2 style={{fontFamily: "'Hind Siliguri', sans-serif",display:'flex',justifyContent:'center',alignItems:'center'}}><a className='my-3 our-services' target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Sql' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily: 'BDSuper'}}>C++</a></h2>
+    <h2 style={{fontFamily: "'Hind Siliguri', sans-serif",display:'flex',justifyContent:'center',alignItems:'center'}}><a className='my-3 our-services' target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/CPP' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily: 'BDSuper'}}>C++</a></h2>
     <div className="container my-5 justify-content-center">
             <div className="row" >
               
