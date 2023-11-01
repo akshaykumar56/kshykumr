@@ -21,7 +21,7 @@ function BasicExample() {
         </div>
         </div>
 
-      <div className='image1' style={{display:'flex',alignItems:'center',justifyContent:'center',position:'relative'}}>
+      <div className='image1' style={{alignItems:'center',justifyContent:'center',position:'relative'}}>
       <div id="mainDiv">
     <div id="boxDiv">
         <div id="front" style={{backgroundImage:`url(${Img1})`,backgroundColor:(mode==='white'?'black':'white')}}></div>

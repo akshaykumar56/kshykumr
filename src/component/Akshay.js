@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AnimatedCursor from './Home1/ANIMATED';
 import Card from 'react-bootstrap/Card';
 const Akshay = () => {
   const mode=localStorage.getItem("mode");
@@ -10,14 +10,14 @@ const Akshay = () => {
   var color=(mode==='white'?'black':'white');
   return (
     <>
-    <div className='container d-flex flex-column align-items-center justify-content-around my-5' style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
-    <h1 className='heading my-3 d-flex' style={{textAlign:'center'}}>TOOLS</h1>
-    
-    </div>
+    <AnimatedCursor/>
 
-    <div className='concepts'>
-    <div className='concept'  style={{margin:"0px 10px",width:'100%'}}>
-    <div className="container my-5 justify-content-center">
+<div className='concepts'>
+
+    <div className='concept my-5' style={{backgroundColor:(mode==='white'?'white':'black'),flexDirection:'column',display:'flex',justifyContent:'center',alignItems:'center'}}>
+    <h2 className='heading my-3 d-flex' style={{textAlign:'center',fontFamily: "'BDSuper'"}}>TOOLS</h2>
+   
+  <div className="container my-5 justify-content-center">
             <div className="row" >
               
 
@@ -89,9 +89,8 @@ const Akshay = () => {
 
       </div>
     </div>
-  </div>
-</div>
-
+        </div>
+   </div>
 
     </>
   )
