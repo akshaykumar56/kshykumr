@@ -14,7 +14,7 @@ function BasicExample(props) {
  const style2={
   backgroundColor:(!mode?'black !important':mode),
   boxShadow: `0px 15px 10px -15px ${(mode==='white'?'black':'grey')}`,
-  borderTop:`1px solid grey`
+  borderTop:`1px solid ${(mode==='white'?'#C0C0C0':'#303030')}`
 }
   return (
     <>
@@ -23,7 +23,7 @@ function BasicExample(props) {
     <div className='d-flex justify-content-around' style={style1}>
       <div className='Inner-Navbar'>
         <div > 
-        <div className='logo' style={{display:'flex',justifyContent:'center',alignItems:'center'}}><b><Link to='/akshay' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily:'Kanit'}}>AKSHAY</Link></b></div>
+        <div className='logo' style={{display:'flex',justifyContent:'center',alignItems:'center'}}><b><Link to='/akshay' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily:'Agbalumo',color:(mode==='white'?'#65C891':'#3CCDE9')}}>AK</Link></b></div>
         </div>
        
        <div></div>
