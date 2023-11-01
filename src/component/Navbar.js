@@ -23,7 +23,7 @@ function BasicExample(props) {
     <div className='d-flex justify-content-around' style={style1}>
       <div className='Inner-Navbar'>
         <div > 
-        <div className='logo' style={{display:'flex',justifyContent:'center',alignItems:'center'}}><b><Link to='/akshay' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily:'Agbalumo',color:(mode==='white'?'#65C891':'#3CCDE9')}}>AK</Link></b></div>
+        <div className='logo' style={{display:'flex',justifyContent:'center',alignItems:'center'}}><b><Link to='/akshay' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily:'BDSuper',color:(mode==='white'?'#65C891':'#3CCDE9')}}>AKSHAY</Link></b></div>
         </div>
        
        <div></div>
