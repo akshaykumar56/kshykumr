@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AnimatedCursor from '../../Home1/ANIMATED';
 import Card from 'react-bootstrap/Card';
 
 import './python.css'
@@ -11,7 +11,7 @@ const Python = () => {
   var color=(mode==='white'?'black':'white');
   return (
     <>
-
+   <AnimatedCursor/>
     <div className='concepts' >
     <div className='concept my-5' style={{backgroundColor:(mode==='white'?'white':'black')}}>
   <h2 style={{fontFamily: "'Hind Siliguri', sans-serif",display:'flex',justifyContent:'center',alignItems:'center'}}><a className='my-3 our-services' target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/Python' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily: 'BDSuper'}}>PYTHON</a></h2>

@@ -8,7 +8,7 @@ import Github from './github.png'
 import Insta from './instagram.png'
 import Skype from './skype.png'
 import Linked from './linkedin.png'
-
+import AnimatedCursor from '../Home1/ANIMATED';
 import './Contact.css';
 
 import {useRef} from 'react';
@@ -70,7 +70,7 @@ const Contact = () => {
   return (
   <>
   {/* <div className='contact' style={{backgroundImage:(mode==='white'?(`url(${IMG2}`):(`url(${IMG}`)),backgroundRepeat:'no-repeat',backgroundPosition: 'center center',backgroundSize: 'cover',width:'100%',height:'300px'}}>     */}
-
+<AnimatedCursor/>
   <div className='contact' style={{width:'100%',height:'200px'}}>  
   {/* <div className="text mx-2"> */}
   {/* <MovingComponent className='my-5'

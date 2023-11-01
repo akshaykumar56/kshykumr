@@ -7,7 +7,7 @@ import IEDU from './IEDU.png'
 import INOT from './INOT.png'
 import API from './API.png'
 import HIMCO from './HIMCO.png'
-
+import AnimatedCursor from '../Home1/ANIMATED';
 import SILICON from './Silicon.png'
 import './project.css'
 const Project = () => {
@@ -18,6 +18,8 @@ const Project = () => {
   var backgroundColor=(mode==='white'?'white':'black');
   var color=(mode==='white'?'black':'white');
   return (
+    <>
+    <AnimatedCursor/>
     <div style={{fontFamily: "'Hind Siliguri', sans-serif"}}>
       <div className="d-flex flex-column justify-content-center align-items-center">
       <div className='container textAlign d-flex flex-column align-items-center justify-content-around my-5'>
@@ -331,6 +333,7 @@ const Project = () => {
       </div>
     </div>
   </div>
+  </>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-
+import AnimatedCursor from '../../Home1/ANIMATED';
 
 import './Mongo.css'
 const Mongo = () => {
@@ -11,6 +11,7 @@ const Mongo = () => {
   var color=(mode==='white'?'black':'white');
   return (
 <>
+<AnimatedCursor/>
     <div className='concepts' >
     <div className='concept my-5' style={{backgroundColor:(mode==='white'?'white':'black')}}>
   <h2 style={{fontFamily: "'Hind Siliguri', sans-serif",display:'flex',justifyContent:'center',alignItems:'center'}}><a className='my-3 our-services' target="_blank" rel="noreferrer"  href='https://github.com/akshaykumar56/WebDevelopment/tree/main/mongoDB' style={{textDecoration:'none',color:(mode==='white'?'black':'white'),fontFamily: 'BDSuper'}}>MONGO</a></h2>

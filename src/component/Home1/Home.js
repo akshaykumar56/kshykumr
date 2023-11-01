@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import AnimatedCursor from './ANIMATED';
 // import Img from './Ak.jpg';
 // import Img2 from './Ak2.jpg';
 import Img1 from './Akshay.png';
@@ -10,6 +11,10 @@ import Resume from './Resume.pdf'
 import Service from './Service/Service';
 // import TypeWriterEffect from 'react-typewriter-effect';
 const Home = () => {
+
+
+
+  
   const mode=localStorage.getItem("mode");
   var newColor =(mode==='white'?'#65C891':'#3CCDE9');
   useEffect(()=>
@@ -65,8 +70,8 @@ const Home = () => {
     </div>
     </div> 
     </div> */}
+    <AnimatedCursor/>
 <Content1/>
-
   <div className='About px-2 py-2' style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),margin:'100px 0px'}}>
     <div className="about2 ">
 
