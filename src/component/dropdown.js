@@ -18,17 +18,18 @@ function closeNav(e) {
     <div className='dropdown' >
     <div id="mySidenav" className="sidenav" style={{backgroundColor:(mode==='white'?'#F5F5F5':'#181818'),opacity:'0.985'}}>
   <Link   className="closebtn" onClick={closeNav} style={{fontSize:'25px',color:(mode==='white'?'black':'white')}}>&times;</Link >
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/html" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>HTML</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/css" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>CSS</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/javascript" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>JAVASCRIPT</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/react" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>REACT</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/node" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>NODE</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/express" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>EXPRESS</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/mongo" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>MONGO</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/ai" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>AI</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/c" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>DATASTRUCTURE</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/cpp" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>CPP</NavLink></div>
-  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/sql" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'red':'yellow') : (mode==='white'?'black':'white') })}>SQL</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/html" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>HTML</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/css" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>CSS</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/javascript" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>JAVASCRIPT</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/react" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>REACT</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/node" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>NODE</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/express" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>EXPRESS</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/mongo" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>MONGO</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/ai" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>AI</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/python" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>PYTHON</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/c" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>DATASTRUCTURE</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/cpp" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>CPP</NavLink></div>
+  <div onClick={closeNav}><NavLink className='nav-links1' to="/home/sql" style={({ isActive }) => ({ color: isActive ? (mode==='white'?'#65C891':'#3CCDE9') : (mode==='white'?'black':'white') })}>SQL</NavLink></div>
 </div>
 <button onClick={openNav} style={{border:'0px',background:'transparent'}}>
   <div style={{backgroundColor:(mode==='white'?'black':'white'),height:'3px',width:'20px',margin:'3px'}}></div>

@@ -7,7 +7,10 @@
     transition: all .5s ease-in-out;
 
 }
-
+.ticker__item img{
+  height: 150px;
+  width: 150px;
+}
 .ticker__item img:hover{
 filter: invert(70%) !important;
 }
@@ -50,6 +53,7 @@ align-items: center;
 
 
 .our-services{
+  font-size: 40px;
     font-weight: 400;
     background: -webkit-linear-gradient(180deg,#363636, #4FC7EC,#65C891);
   background-clip: text;
@@ -219,4 +223,15 @@ align-items: center;
       margin:0px 0px 20px 0px;
     }
     .images-2{width:100%};
+}
+
+
+@media only screen and (max-width:600px) {
+  .our-services{
+    font-size: 30px;
+  }
+  .ticker__item img{
+    height: 100px;
+    width: 100px;
+  }
 }

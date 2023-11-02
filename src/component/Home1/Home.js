@@ -88,10 +88,10 @@ const Home = () => {
     <div className='data1'>
     <div  className='akshay' style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),fontFamily:"'Phudu', cursive",fontSize:'30px'}}>Hello!</div>
     <div style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),fontSize:'28px',margin:'10px 0px',fontWeight:'600'}}>I'm Akshay Kumar</div>
-      <p className="aboutdesc" style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),fontSize:'20px'}}>Web Developer Experienced In HTML, CSS, JavaScript, ReactJs, NodeJs, ExpressJs, MongoDB. 
+      <p className="aboutdesc" style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white')}}>Web Developer Experienced In HTML, CSS, JavaScript, ReactJs, NodeJs, ExpressJs, MongoDB. 
       </p>
      <h2 className='additional' style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white')}}><b>Additional Courses </b></h2>
-      <p className='additionaldesc' style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white'),fontSize:'20px'}}>Artificial Intelligence Course From C-DAC Mohali. </p>
+      <p className='additionaldesc' style={{backgroundColor:(mode==='white'?'white':'black'),color:(mode==='white'?'black':'white')}}>Artificial Intelligence Course From C-DAC Mohali. </p>
       <a type="button" className="btn btn-secondary btn-lg" href={Resume}  style={{backgroundColor:'transparent',width:'250px',height:'50px',color:(mode==='white'?'#65C891':'#3CCDE9'),margin:'40px 0px',border:`2px solid ${newColor}`,fontFamily:'Bebas Neue',fontSize:'26px',display:'flex',justifyContent:'center',alignItems:'center'}}>RESUME</a>
     </div>
 

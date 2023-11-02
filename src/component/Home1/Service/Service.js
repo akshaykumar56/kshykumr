@@ -22,7 +22,7 @@ function Service() {
 
 <div style={{margin:'100px 10px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
     <div style={{display:'flex',justifyContent:'center',flexDirection:'column'}}>
-    <div  className='our-services' style={{fontSize:'40px',fontFamily:'BDSuper',textAlign:'center'}}>Technology I Work With</div>
+    <div  className='our-services' style={{fontFamily:'BDSuper',textAlign:'center'}}>Technology I Work With</div>
     </div>
 
  </div>
@@ -30,15 +30,15 @@ function Service() {
 
 <div style={{margin:'0px 0px 100px 0px'}}>
  <Marquee>
- <div className="ticker__item" key={1}><img src={Tech1} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
-  <div className="ticker__item" key={2}><img src={Tech2} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+ <div className="ticker__item" key={1}><img src={Tech1} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+  <div className="ticker__item" key={2}><img src={Tech2} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
   <div className="ticker__item" key={3}><img src={Tech3} alt='tech1' style={{height:'150px',width:'200px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
-  <div className="ticker__item" key={4}><img src={Tech4} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
- <div className="ticker__item" key={5}><img src={Tech5} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
-  <div className="ticker__item" key={8}><img src={Tech8} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
-  <div className="ticker__item" key={9}><img src={Tech9} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
-  <div className="ticker__item" key={10}><img src={Tech10} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
- <div className="ticker__item" key={11}><img src={Tech11} alt='tech1' style={{height:'150px',width:'150px',margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+  <div className="ticker__item" key={4}><img src={Tech4} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+ <div className="ticker__item" key={5}><img src={Tech5} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+  <div className="ticker__item" key={8}><img src={Tech8} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+  <div className="ticker__item" key={9}><img src={Tech9} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+  <div className="ticker__item" key={10}><img src={Tech10} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
+ <div className="ticker__item" key={11}><img src={Tech11} alt='tech1' style={{margin:'0px 30px',filter:(mode==='white'?'invert(0)':'invert(1)')}}/></div>
   </Marquee>
   </div>
 

@@ -15,8 +15,8 @@ function BasicExample() {
         <div className='text11'><div className='text111' >TECHNOLOGY IS BEST WHEN IT BRINGS PEOPLE TOGETHER</div>
         <div className='text11' style={{margin:'10px 0px'}}>Every line of code is a story waiting to be told, and technology is the storyteller of our modern era</div>
         <div className='button-home' style={{display:'flex',flexDirection:'row',width:'!00',justifyContent:'flex-start'}}>
-            <Link to='/contact' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#65C891',margin:'30px 30px 0px 0px',fontFamily: 'Montserrat'}}>Contact</div></Link>
-            <Link to='/project' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#3CCDE9',margin:'30px 0px 0px 0px',fontFamily: 'Montserrat'}}>Projects</div></Link>
+            <Link className='button1-home-Link' to='/contact' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#65C891',margin:'30px 30px 0px 0px',fontFamily: 'Montserrat'}}>Contact</div></Link>
+            <Link className='button1-home-Link' to='/project' style={{color:'white',textDecoration:'none'}}><div className='button1-home' style={{display:'flex',justifyContent:'center',alignItems:'center',height:'60px',borderRadius:'10px',backgroundColor:'#3CCDE9',margin:'30px 0px 0px 0px',fontFamily: 'Montserrat'}}>Projects</div></Link>
             </div> 
         </div>
         </div>
