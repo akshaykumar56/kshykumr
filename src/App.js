@@ -9,6 +9,8 @@ import Project from './component/Project/Project';
 import Contact from './component/Contact/Contact';
 import Home from './component/Home1/Home';
 import Footer from './component/Footer'
+import FooterUpper from './component/FooterUpper'
+
 
 import Html from './component/home/HTML/Html';
 import Css from './component/home/CSS/Css';
@@ -95,6 +97,7 @@ function App() {
     <Route exact path="/home/cpp" element={<Cpp/>}/>
     <Route exact path="/home/sql" element={<SQL/>}/>
     </Routes>
+    <FooterUpper/>
     <Footer/>
     </BrowserRouter>
   </>

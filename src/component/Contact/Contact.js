@@ -235,8 +235,8 @@ const Contact = () => {
         <TextField type='text' className='contact-input2-input' id="Project-Details" label="Your Message" variant="standard" name='message' style={{margin:'20px 20px 0px 0px',width:'98%',color:(mode==='white'?'black':'white')}}/>
         </div>
         <div>
-            <button type='submit' onClick={Alert} className='Contact-Submit-Button' style={{margin:'30px 0px 0px 0px',border:'none',fontSize:'20px',backgroundColor:'transparent',fontFamily:'BDSuper',color:(mode==='white'?'black':'white')}}>Send Message</button>
-            <input type="reset" defaultValue="Reset" placeholder='Reset' style={{backgroundColor:'transparent',color:(mode==='white'?'black':'white'),fontFamily:'BDSuper',fontSize:'20px',margin:'0px 0px 0px 100px',border:'0'}}/>
+            <button type='submit' onClick={Alert} className='Contact-Submit-Button' style={{margin:'30px 0px 0px 0px',border:'none',backgroundColor:'transparent',fontFamily:'BDSuper',color:(mode==='white'?'black':'white')}}>Send Message</button>
+            <input className='contact-reset' type="reset" defaultValue="Reset" placeholder='Reset' style={{backgroundColor:'transparent',color:(mode==='white'?'black':'white'),fontFamily:'BDSuper',margin:'0px 0px 0px 100px',border:'0'}}/>
         </div>
         </form>
     </div>

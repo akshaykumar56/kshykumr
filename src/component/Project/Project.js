@@ -7,6 +7,7 @@ import IEDU from './IEDU.png'
 import INOT from './INOT.png'
 import API from './API.png'
 import HIMCO from './HIMCO.png'
+import CAFE from './Cafe.png'
 import AnimatedCursor from '../Home1/ANIMATED';
 import SILICON from './Silicon.png'
 import './project.css'
@@ -146,7 +147,7 @@ const Project = () => {
             </Card>
               </div>
 
-              <div className="col-md-4 my-3" key={7}>
+              <div className="col-md-4 my-3" key={8}>
             <Card  style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
             <Card.Img variant="top" src={SILICON} style={{borderRadius:'0px'}}/>
             <Card.Body>
@@ -160,8 +161,24 @@ const Project = () => {
             </Card.Body>
             </Card>
               </div>
-           
 
+
+              <div className="col-md-4 my-3" key={9}>
+            <Card  style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
+            <Card.Img variant="top" src={CAFE} style={{borderRadius:'0px'}}/>
+            <Card.Body>
+            <Card.Title className='titlename'>Web Dev Project</Card.Title>
+            <Card.Text>
+              In this project I build a Template Website for a Restaurant.
+            </Card.Text>
+            <div className="d-flex flex-column">
+            <a target="_blank" rel="noreferrer" href='https://cafetcafe.netlify.app/' style={{color:'white',textDecoration: 'none'}} ><button className="custom-btn btn-12" style={{margin:'20px 0px'}}><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Click!</span><span style={{background:'none',backgroundColor:(mode ==='white'?'black':'white'),color:(mode ==='white'?'white':'black')}}>Visit Website</span></button></a>
+            </div>
+            </Card.Body>
+            </Card>
+              </div>
+           
+             
 
 
             </div>
@@ -173,7 +190,7 @@ const Project = () => {
          <h3 className="my-3" style={{fontSize:'25px',fontWeight:'600',fontFamily:'BDSuper'}}>ARTIFICIAL INTELLIGENCE</h3>
          <div className="container my-3  justify-content-center" >
              <div className="row" >
-             <div className="col-md-4 my-3" key={6}>
+             <div className="col-md-4 my-3" key={17}>
             <Card Card className='card12' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
             <Card.Body>
             <Card.Title className='titlename'>OpenCV Project</Card.Title>
@@ -187,7 +204,7 @@ const Project = () => {
             </Card>
               </div>
 
-            <div className="col-md-4 my-3" key={7}>
+            <div className="col-md-4 my-3" key={18}>
             <Card Card className='card12' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
             <Card.Body>
             <Card.Title className='titlename'>Natural Language Processing Project</Card.Title>
@@ -202,7 +219,7 @@ const Project = () => {
               </div>
 
 
-            <div className="col-md-4 my-3" key={8}>
+            <div className="col-md-4 my-3" key={19}>
             <Card Card className='card12' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
             <Card.Body>
             <Card.Title className='titlename'></Card.Title>
@@ -218,7 +235,7 @@ const Project = () => {
             </div>
 
 
-              <div className="col-md-4 my-3" key={9}>
+              <div className="col-md-4 my-3" key={20}>
               <Card Card className='card12' style={{backgroundColor:`${backgroundColor}`,color:`${color}`,borderRadius:'0', boxShadow: `1px 2px 3px ${newColor}, -1px -2px 3px ${newColor1}`}}>
             <Card.Body>
             <Card.Title className='titlename'>Logistic Regression Project</Card.Title>

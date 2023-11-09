@@ -1,0 +1,128 @@
+.Component6-Box1
+{
+    width: 40%;
+   padding: 0px 100px;
+    align-items:flex-start;
+    justify-content:space-between;
+    
+}
+
+.Component6-Box1-Text{
+    text-align: left;
+}
+
+.Follow-Us_Div{
+    align-items: flex-start;
+   }
+.Component6-Box2
+{
+height: 200px;
+    width: 15%;
+}
+.Component6-Box3
+{
+    height: 200px;
+    width: 15%;
+}
+.textAlign{
+    text-align: left;
+}
+
+.Component6-Box4
+{
+    height: 200px;
+    width: 30%;
+    align-items: flex-start;
+}
+
+.Component6-Box-Container{
+    display:flex;
+    flex-direction:row;
+    
+}
+.Component6-Navigation{
+    align-items:flex-start;
+}
+.Component6-Dishes-Container
+{
+    align-items: flex-start;
+}
+@media only screen and (max-width:900px) {
+    .Component6-Box1
+{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    
+}
+
+.Component6-Box1-Text{
+    text-align: center;
+}
+
+
+.Follow-Us-Div{
+    align-items: center;
+   }
+.Happy-Customer{
+    font-size: 40px;
+}
+.textAlign{
+    text-align: center;
+}
+
+.Component6-Box1-Text{
+    width: 90%;
+    margin: 10px 0px;
+}
+.Component6-Box2
+{
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Component6-Dishes-Container
+{
+    align-items: center;
+}
+.Follow-Us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Component6-Navigation{
+    align-items:center;
+}
+.Component6-Box3
+{
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.Component6-Image{
+    width: 250px;
+}
+.Component6-Box4
+{
+    height: 120px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Component6-Box-Container{
+    flex-direction:column;
+}
+  }
+
+  @media only screen and (max-width:600px) {
+   .Component6-Box-Text{
+    font-size: 30px;
+   }
+   
+  }
