@@ -22,13 +22,7 @@ import './Contact.css'
 
 const Contact = () => {
 
-  const Alert = () => {
-    Swal.fire({
-      title: "Your message is sent successfully!",
-      icon: "success",
-      confirmButtonText: "Okay"
-    })
-  };
+
 
 
   const form = useRef();
@@ -37,8 +31,12 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_7n76pym', 'template_id121', form.current, 'MPq-iGadObwPG0Ccv')
-      .then((result) => {
-          console.log(result.text);
+      .then(() => {
+        Swal.fire({
+          title: "Your message is sent successfully!",
+          icon: "success",
+          confirmButtonText: "Okay"
+        })
       }, (error) => {
           console.log(error.text);
       });
@@ -252,4 +250,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
